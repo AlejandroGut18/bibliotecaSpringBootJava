@@ -4,7 +4,6 @@ import com.BibliotecaJava.Biblioteca.Spring.Boot.Java.domain.dto.NacionalidadDto
 import com.BibliotecaJava.Biblioteca.Spring.Boot.Java.domain.entities.NacionalidadEntity;
 import com.BibliotecaJava.Biblioteca.Spring.Boot.Java.mappers.Mapper;
 import org.springframework.stereotype.Component;
-import com.lorem.store.mappers.Mapper;
 import org.modelmapper.ModelMapper;
 
 @Component
