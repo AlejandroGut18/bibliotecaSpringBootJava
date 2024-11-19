@@ -8,6 +8,9 @@ public class BibliotecaSpringBootJavaApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(BibliotecaSpringBootJavaApplication.class, args);
+		System.out.println("-----------------------------------------");
+		System.out.println("************SISTEMA INICIADO*************");
+		System.out.println("-----------------------------------------");
 	}
 
 }
