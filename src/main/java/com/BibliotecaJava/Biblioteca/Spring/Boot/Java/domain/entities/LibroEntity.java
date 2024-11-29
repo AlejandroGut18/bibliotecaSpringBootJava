@@ -17,6 +17,7 @@ import java.util.Set;
 public class LibroEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "libro_id_seq")
+    @SequenceGenerator(name = "libro_id_seq", sequenceName = "libro_id_seq", allocationSize = 1)
 
     private Long id;
 
@@ -27,4 +28,6 @@ public class LibroEntity {
     @OneToMany(mappedBy = "libro")
     private Set<LibroAutorEntity> libroAutores;
 
+    public void setAutor(AutorEntity savedAutor) {
+    }
 }

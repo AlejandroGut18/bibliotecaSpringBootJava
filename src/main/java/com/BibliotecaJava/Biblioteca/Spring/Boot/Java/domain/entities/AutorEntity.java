@@ -17,6 +17,8 @@ import java.util.Set;
 public class AutorEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "autor_id_seq")
+    @SequenceGenerator(name = "autor_id_seq", sequenceName = "autor_id_seq", allocationSize = 1)
+
     private Long id;
 
     private String nombre;

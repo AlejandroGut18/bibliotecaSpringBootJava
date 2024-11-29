@@ -17,6 +17,7 @@ import java.util.Set;
 public class NacionalidadEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "nacionalidad_id_seq")
+    @SequenceGenerator(name = "nacionalidad_id_seq", sequenceName = "nacionalidad_id_seq", allocationSize = 1)
     private Long id;
 
     private String nombre;

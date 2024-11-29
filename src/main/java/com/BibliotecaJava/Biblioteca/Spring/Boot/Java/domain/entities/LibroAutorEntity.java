@@ -15,6 +15,7 @@ import lombok.NoArgsConstructor;
 public class LibroAutorEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "libro_autor_id_seq")
+    @SequenceGenerator(name = "libro_autor_id_seq", sequenceName = "libro_autor_id_seq", allocationSize = 1)
     private Long id;
 
     @ManyToOne
